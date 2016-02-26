@@ -1,20 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LoadAssets : BaseLoader {
+public class LoadAssets : BaseLoader
+{
 
-	public string assetBundleName = "cube.unity3d";
-	public string assetName = "cube";
+    public string assetBundleName = "cube.unity3d";
+    public string assetName = "cube";
 
-	// Use this for initialization
-	IEnumerator Start () {
+    // Use this for initialization
+    IEnumerator Start()
+    {
 
-		yield return StartCoroutine(Initialize() );
+        yield return StartCoroutine(Initialize());
 
-		// Load asset.
-		yield return StartCoroutine(Load (assetBundleName, assetName) );
+        // Load asset.
+        yield return StartCoroutine(Load(assetBundleName, assetName));
 
-		// Unload assetBundles.
-		AssetBundleManager.UnloadAssetBundle(assetBundleName);
-	}
+        // Unload assetBundles.
+        AssetBundleManager.UnloadAssetBundle(assetBundleName);
+    }
 }

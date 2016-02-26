@@ -6,7 +6,7 @@ using UnityEditor;
 
 public class BaseLoader : MonoBehaviour {
 
-	const string kAssetBundlesPath = "/AssetBundles/";
+    const string kAssetBundlesPath = "/Assets/StreamingAssets/AssetBundles/";
 
 	// Use this for initialization.
 	IEnumerator Start ()

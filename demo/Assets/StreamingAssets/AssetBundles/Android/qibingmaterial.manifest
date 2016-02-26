@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1268678388
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5dfae2001c129a8752f4450d0c44bdd1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 20d2a047ae4e99a3eaf853982df4d9aa
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Resources/XB_3/Materials/qibing.mat
+Dependencies: []

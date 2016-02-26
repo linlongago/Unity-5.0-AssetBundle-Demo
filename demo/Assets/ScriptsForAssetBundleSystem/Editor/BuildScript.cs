@@ -7,10 +7,10 @@ using System.IO;
 
 public class BuildScript
 {
-	const string kAssetBundlesOutputPath = "AssetBundles";
+    const string kAssetBundlesOutputPath = "Assets/StreamingAssets/AssetBundles/";
 
-	public static void BuildAssetBundles()
-	{
+    public static void BuildAssetBundles()
+    {
 		// Choose the output path according to the build target.
 		string outputPath = Path.Combine(kAssetBundlesOutputPath,  BaseLoader.GetPlatformFolderForAssetBundles(EditorUserBuildSettings.activeBuildTarget) );
 		if (!Directory.Exists(outputPath) )
