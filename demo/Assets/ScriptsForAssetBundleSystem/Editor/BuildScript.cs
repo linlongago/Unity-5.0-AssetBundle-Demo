@@ -11,12 +11,12 @@ public class BuildScript
 
     public static void BuildAssetBundles()
     {
-		// Choose the output path according to the build target.
 		string outputPath = Path.Combine(kAssetBundlesOutputPath,  BaseLoader.GetPlatformFolderForAssetBundles(EditorUserBuildSettings.activeBuildTarget) );
 		if (!Directory.Exists(outputPath) )
 			Directory.CreateDirectory (outputPath);
 
 		BuildPipeline.BuildAssetBundles (outputPath, 0, EditorUserBuildSettings.activeBuildTarget);
+        Md5MenuItems.GenMd5();
 	}
 
 	public static void BuildPlayer()
